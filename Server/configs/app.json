@@ -1,0 +1,7 @@
+{
+    "user" : "admin",
+    "password": "admin",
+    "storage_dir": "storage",
+    "allow_max_conn": 256,
+    "max_conn_per_ip": 5
+}
