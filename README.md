@@ -1,6 +1,20 @@
 # python_ftp_server_client
 This module can act as a ftp server to serve files/dir through ftp protocol and also as a ftp client to download and upload files from the server.
 
+### FTP Server:
+
+The server app runs in background and logs the connection and requests in Server/logs/server.log file.
+```
+INFO:pyftpdlib:127.0.0.1:52240-[admin] USER 'admin' logged in.
+INFO:pyftpdlib:127.0.0.1:52240-[admin] CWD D:\Codebase\python_ftp_server_client\Server\storage 250
+INFO:pyftpdlib:127.0.0.1:52240-[admin] RETR D:\Codebase\python_ftp_server_client\Server\storage\server3.txt completed=1 bytes=24 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:52240-[admin] STOR D:\Codebase\python_ftp_server_client\Server\storage\clientfile.txt completed=1 bytes=46 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:52240-[admin] FTP session closed (disconnect).
+```
+
+
+### FTP Client CLI:
+The Client CLI can be used to connect to the FTP server and to transfer files/dir from or to the server.
 
 ```
 py .\StartFTPClient.py
