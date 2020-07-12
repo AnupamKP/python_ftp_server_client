@@ -43,3 +43,10 @@ class Client:
         else:
             print("Unauthorized!!!!")
     
+    def list_client_storage(self):
+        path=self.client_storage
+        with os.scandir(path) as it:
+            for entry in it:
+                if not entry.name.startswith('.') and entry.is_file():
+                    print(entry.name)
+    
