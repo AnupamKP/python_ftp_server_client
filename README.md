@@ -1,6 +1,14 @@
 # python_ftp_server_client
 This module can act as a ftp server to serve files/dir through ftp protocol and also as a ftp client to download and upload files from the server.
 
+## Pre-Setup:
+
+python --version > 3.0.1
+
+```
+pip3 install -r requirements.txt
+```
+
 ## FTP Server:
 
 The server app runs in background and logs the connection and requests in Server/logs/server.log file.
